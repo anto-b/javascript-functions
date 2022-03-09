@@ -9,7 +9,7 @@ Copy and paste the function into your project, or download the file and use js m
 ## Usage
 
 ```javascript
-const domain = extractDomain("https://www.your-url.com/");
+const domain = extractDomain("https://www.your-url.com/"); //returns domain as string
 ```
 
 ## Important
