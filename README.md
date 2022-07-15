@@ -2,6 +2,6 @@
 
 This repository is a public collection of useful javascript functions, or javascript challenges. 
 
-The repository will be constantly updated, with new functions or challengs.
+The repository will be constantly updated, with new functions or challenges.
 
 ***Happy Coding***
