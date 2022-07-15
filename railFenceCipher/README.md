@@ -2,7 +2,7 @@
 
 Please, read first the exercise explenation:
 
-![exercise explenation](./images/cipherExplenation.png);
+![exercise explenation](./images/cipherExplenation.png)
 
 Basically we need to implement two functions, once for the encoding and the other for the coding.
 
