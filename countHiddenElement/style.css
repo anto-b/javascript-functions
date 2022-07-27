@@ -1,0 +1,9 @@
+.hidden {
+    display: none;
+    color: red;
+}
+
+.visibility-hidden {
+    opacity: 0;
+}
+
