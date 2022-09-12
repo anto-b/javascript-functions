@@ -10,33 +10,33 @@ You always walk only a single block for each letter (direction) and you know it 
 of course, return you to your starting point. Return false otherwise.
 
 My implementation:
-Think of the city as a matrix, and suppose you're in the center of the matrix.
+Think of the city as a matrix, and suppose you're in a random cell of the matrix, with row index 0 and column index 0
 If you move upward (north) then row index+1
 If you move downward (south) then row index-1
 If you move leftward (west) then column index-1
 If you move rightward (est) then column index+1
-Is known that we only have 10 minutes, so for this reason we'll use a 10x10 matrix, and also for this reason the maximum array length will be 10
+We want to walk exactly ten minutes hence the array (with movements) length will be exactly ten, and after the walk we need to be in position [0,0] again.
 */
 
 function isValidWalk(walk) {
-    let centerCoordinates = [0, 0]
+    let coordinates = [0, 0]
     if (walk.length === 10) {
         for (let i = 0; i < walk.length; i++) {
             switch (walk[i]) {
                 case "n":
-                    centerCoordinates[0]++;
+                    coordinates[0]++;
                     break;
 
                 case "s":
-                    centerCoordinates[0]--
+                    coordinates[0]--
                     break;
 
                 case "e":
-                    centerCoordinates[1]++
+                    coordinates[1]++
                     break;
 
                 case "w":
-                    centerCoordinates[1]--
+                    coordinates[1]--
                     break;
 
                 default:
@@ -44,7 +44,7 @@ function isValidWalk(walk) {
             }
         }
 
-        if (centerCoordinates[0] === 0 && centerCoordinates[1] === 0) {
+        if (coordinates[0] === 0 && coordinates[1] === 0) {
             return true
         }
 
